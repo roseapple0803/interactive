@@ -82,23 +82,63 @@
     <h2>Shiny App Demo</h2>
   </hgroup>
   <article data-timings="">
-    <pre><code class="r">slidifyUI(
-  sidebarPanel(
-    selectInput(&#39;sex&#39;, &#39;Choose Sex&#39;, c(&#39;Male&#39;, &#39;Female&#39;)),
-    selectInput(&#39;type&#39;, &#39;Choose Type&#39;,
-      c(&#39;multiBarChart&#39;, &#39;multiBarHorizontalChart&#39;)
-    )
-  ),
+     
+<div class='row-fluid'>
+  <div class='span5'>
+    <form id="knitForm2" data-cell="2">
+      <div class="row-fluid">
+  <div class="col-sm-4">
+    <form class="well">
+      <div class="form-group shiny-input-container">
+        <label class="control-label" for="sex">Choose Sex</label>
+        <div>
+          <select id="sex"><option value="Male" selected>Male</option>
+<option value="Female">Female</option></select>
+          <script type="application/json" data-for="sex" data-nonempty="">{}</script>
+        </div>
+      </div>
+      <div class="form-group shiny-input-container">
+        <label class="control-label" for="type">Choose Type</label>
+        <div>
+          <select id="type"><option value="multiBarChart" selected>multiBarChart</option>
+<option value="multiBarHorizontalChart">multiBarHorizontalChart</option></select>
+          <script type="application/json" data-for="type" data-nonempty="">{}</script>
+        </div>
+      </div>
+    </form>
+  </div>
+  <div class="col-sm-8">
+    <div id="nvd3plot" class="shiny-html-output nvd3 rChart"></div>
+  </div>
+</div>
 
-  mainPanel(
-    tags$div(id = &#39;nvd3plot&#39;, class=&#39;shiny-html-output nvd3 rChart&#39;)
-  )
-)
-</code></pre>
-
-<pre><code>## Error in eval(expr, envir, enclos): could not find function &quot;slidifyUI&quot;
-</code></pre>
-
+      <div id='aceeditor2' style="height:px;"></div>
+      <div class='interactive btn-toolbar pull-left'>
+        <div class='btn-group'>
+          <a class='btn btn-small action-button' id='runCode2' data-action='runCode'
+            data-cell='2' rel='tooltip' data-title='Run Code'>
+            <i class='icon-play'></i>
+          </a>
+          <a class='btn btn-small iBtn' id='testCode2' data-action='testCode'
+             data-cell='2' rel='tooltip' data-title='Test Code'>
+            <i class='icon-check'></i>
+          </a>
+          <a class='btn btn-small iBtn' id='clearResult2' data-action='clearResult'
+             data-cell='2' rel='tooltip' data-title='Clear Output'>
+            <i class="icon-remove"></i>
+          </a>
+          <a class='btn  btn-small iBtn' id='getHint2' rel='tooltip' 
+            data-title="Get Hint" data-action='getHint'
+            data-cell='2' data-hint="">
+            <i class="icon-bookmark"></i>
+          </a>
+        </div>
+      </div>    </form>
+  </div>
+  <div class='span7'>
+    <iframe id="knitResult2" class='shiny-html-output'></iframe>
+  </div>
+</div>
   </article>
   <!-- Presenter Notes -->
 </slide>

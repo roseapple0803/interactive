@@ -25,29 +25,35 @@ This is a hint
 *** .explanation
 This is an explanation
 
---- 
+--- &interactive
 
 ## Shiny App Demo
 
-
-```r
-slidifyUI(
-  sidebarPanel(
-    selectInput('sex', 'Choose Sex', c('Male', 'Female')),
-    selectInput('type', 'Choose Type',
-      c('multiBarChart', 'multiBarHorizontalChart')
-    )
-  ),
-  
-  mainPanel(
-    tags$div(id = 'nvd3plot', class='shiny-html-output nvd3 rChart')
-  )
-)
-```
-
-```
-## Error in eval(expr, envir, enclos): could not find function "slidifyUI"
-```
+<div class="row-fluid">
+  <div class="col-sm-4">
+    <form class="well">
+      <div class="form-group shiny-input-container">
+        <label class="control-label" for="sex">Choose Sex</label>
+        <div>
+          <select id="sex"><option value="Male" selected>Male</option>
+<option value="Female">Female</option></select>
+          <script type="application/json" data-for="sex" data-nonempty="">{}</script>
+        </div>
+      </div>
+      <div class="form-group shiny-input-container">
+        <label class="control-label" for="type">Choose Type</label>
+        <div>
+          <select id="type"><option value="multiBarChart" selected>multiBarChart</option>
+<option value="multiBarHorizontalChart">multiBarHorizontalChart</option></select>
+          <script type="application/json" data-for="type" data-nonempty="">{}</script>
+        </div>
+      </div>
+    </form>
+  </div>
+  <div class="col-sm-8">
+    <div id="nvd3plot" class="shiny-html-output nvd3 rChart"></div>
+  </div>
+</div>
 
 
 
