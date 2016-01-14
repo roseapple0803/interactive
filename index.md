@@ -6,7 +6,7 @@ job         :
 framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
 highlighter : highlight.js  # {highlight.js, prettify, highlight}
 hitheme     : tomorrow      # 
-widgets     : [mathjax, bootstrap, quiz]            
+widgets     : [mathjax, bootstrap, quiz, shiny, interactive]            
 mode        : selfcontained # {standalone, draft}
 knit        : slidify::knit2slides
 --- &radio
@@ -19,15 +19,15 @@ What is $2^0$
 2. _1_
 3. 2
 
-*** .HINT
+*** .hint
 This is a hint
 
-*** .EXPLANATION
+*** .explanation
 This is an explanation
 
 --- 
 
-## Slide 2
+## Shiny App Demo
 
 
 ```r
