@@ -9,6 +9,7 @@ hitheme     : tomorrow      #
 widgets     : [mathjax, bootstrap, quiz, shiny, interactive]            
 mode        : selfcontained # {standalone, draft}
 knit        : slidify::knit2slides
+ext_widgets: {rCharts: [libraries/nvd3]}
 --- &radio
 
 ## Question 1
