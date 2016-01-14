@@ -14,7 +14,7 @@ ext_widgets: {rCharts: [libraries/nvd3]}
 
 ## Question 1
 
-What is $2^0$
+What is $2^0$ ?
 
 1. 0
 2. _1_
